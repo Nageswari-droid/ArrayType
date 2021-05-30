@@ -17,14 +17,4 @@ public class ArrayTypeTest {
     public void checkArrayType() {
         assertEquals(3, arrayType.findArrayType());
     }
-
-    @Test
-    public void checkEvenArray() {
-        assertEquals(false, arrayType.evenArray());
-    }
-
-    @Test
-    public void checkOddArray() {
-        assertEquals(false, arrayType.oddArray());
-    }
 }

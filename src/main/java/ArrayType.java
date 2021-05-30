@@ -6,29 +6,23 @@ public class ArrayType {
     }
 
     public int findArrayType() {
-        if (evenArray()) {
-            return 1;
-        } else if (oddArray()) {
-            return 2;
-        }
-        return 3;
-    }
+        int evenCount = 0;
+        int oddCount = 0;
 
-    public boolean evenArray() {
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 != 0) {
-                return false;
+                oddCount += 1;
+            } else {
+                evenCount += 1;
             }
         }
-        return true;
-    }
 
-    public boolean oddArray() {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
-                return false;
-            }
+        if (evenCount == array.length) {
+            return 1;
+        } else if (oddCount == array.length) {
+            return 2;
+        } else {
+            return 3;
         }
-        return true;
     }
 }

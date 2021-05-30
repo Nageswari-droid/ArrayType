@@ -1,5 +1,4 @@
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class TypePredictor {
     public static void main(String[] args) {
